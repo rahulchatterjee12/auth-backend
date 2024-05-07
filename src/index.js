@@ -11,12 +11,12 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // Handle CORS Error
-// app.use(
-//   cors({
-//     credentials: true,
-//     optionSuccessStatus: 200,
-//   })
-// );
+app.use(
+  cors({
+    origin: "http://localhost:3000",
+    credentials: true,
+  })
+);
 
 app.use("/api", routes);
 
