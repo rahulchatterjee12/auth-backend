@@ -13,7 +13,7 @@ app.use(cookieParser());
 // Handle CORS Error
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: true,
     credentials: true,
   })
 );
