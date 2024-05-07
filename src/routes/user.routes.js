@@ -127,7 +127,7 @@ router.get("/logout", async (req, res, next) => {
 router.get("/", async (req, res, next) => {
   try {
     const token = req.cookies;
-
+    console.log(token);
     if (token.token) {
       const { exp } = jwt.decode(token.token);
       const users = await User.find();
