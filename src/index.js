@@ -13,7 +13,7 @@ app.use(cookieParser());
 // Handle CORS Error
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000","https://auth-frontend-8z2e3sn2n-rahul-chatterjees-projects.vercel.app/"],
     credentials: true,
   })
 );
