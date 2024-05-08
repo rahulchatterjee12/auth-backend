@@ -11,9 +11,10 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // Handle CORS Error
-app.use({
-  credentials: true,
-});
+app.use(cors({
+    origin: true,
+    credentials: true,
+}));
 
 app.use("/api", routes);
 
