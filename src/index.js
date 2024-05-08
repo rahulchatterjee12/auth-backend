@@ -12,7 +12,6 @@ app.use(cookieParser());
 
 // Handle CORS Error
 app.use({
-  origin: ['https://auth-frontend-tau.vercel.app',"http://localhost:3000"],
   credentials: true,
 });
 
